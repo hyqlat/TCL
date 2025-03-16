@@ -10,6 +10,10 @@ We provide model checkpoints for multiple backbone models on different datasets.
 
 `cd {PGBIG/LTD/STSGCN/siMLPe}` and follow the instructions in `{PGBIG/LTD/STSGCN/siMLPe}/README.md`.
 
+> ### *Visualization*
+>
+> For visualization, we has developed a simple [visualization-tool](https://github.com/hyqlat/PyRender-for-Human-Mesh/tree/Mesh_and_Skeleton) that can be used following the instructions in [README.md](https://github.com/hyqlat/PyRender-for-Human-Mesh/blob/Mesh_and_Skeleton/README.md#pyrenskele-for-human-skeleton).
+
 ### Citation
 
 If you find this project useful in your research, please consider citing:
