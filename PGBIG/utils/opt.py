@@ -66,6 +66,15 @@ class Options:
                                                                                   'that sampled from test dataset'
                                                                                   '{8,256,-1(all dataset)}')
         
+        #CL
+        self.parser.add_argument('--t_short_stage', type=list, default=[3,12,25])
+        self.parser.add_argument('--stage_tr_epo', type=list, default=[50,90,120])
+        self.parser.add_argument('--old_weight', type=int, default=64)#0.0001#0.01
+        self.parser.add_argument('--load_epoch', type=int, default=50)
+        self.parser.add_argument('--stage_lr', type=list, default=[1e-3,1e-4,1e-5,1e-6,1e-6])
+
+
+        
     def _print(self):
         print("\n==================Options=================")
         pprint(vars(self.opt), indent=4)

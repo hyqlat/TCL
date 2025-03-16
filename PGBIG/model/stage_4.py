@@ -1,13 +1,9 @@
 from torch.nn import Module
 from torch import nn
 import torch
-# import model.transformer_base
-import math
+
 from model import BaseModel as BaseBlock
 import utils.util as util
-import numpy as np
-import torch.nn.functional as F
-from torch.nn.parameter import Parameter
 from utils.opt import Options
 
 class CFPN(Module):
@@ -34,7 +30,6 @@ class CFPN(Module):
         al_b, al_c, al_t = output_cal_alpha.shape
         output_cal_alpha = output_cal_alpha.reshape([al_b, -1])#B CT
         alpha = self.cal_alpha(output_cal_alpha)#B 1
-        #alpha = torch.square(alpha)#取正
         
         return output_4, output_3, output_2, output_1, alpha
 
@@ -112,6 +107,11 @@ class MultiStageModel(Module):
         for param_name, _ in self.named_parameters():
             print(param_name)
 
+
+    def buffer_add(self, st):
+        for i in range(st):
+            self.register_buffer('al_total_mean_stage_'+str(i), torch.tensor(1.0))
+        
 
     def forward(self, src):
         output_n = self.output_n

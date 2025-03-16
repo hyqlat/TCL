@@ -1,12 +1,14 @@
 # Temporal-Continual-Learning-with-Prior-Compensation-for-Human-Motion-Prediction
 
+This is official implementation for NeurIPS2023 paper **Temporal Continual Learning with Prior Compensation for Human Motion Prediction**.
+
 [[paper]](https://papers.nips.cc/paper_files/paper/2023/file/cf7a83a5342befd11d3d65beba1be5b0-Paper-Conference.pdf)
 
 We provide model checkpoints for multiple backbone models on different datasets.
 
-### PGBIG/LTD/STSGCN/siMLPe
+### Usage
 
-`cd {PGBIG/LTD/STSGCN/siMLPe}` and follow the instructions in the `{PGBIG/LTD/STSGCN/siMLPe}/README.md`
+`cd {PGBIG/LTD/STSGCN/siMLPe}` and follow the instructions in `{PGBIG/LTD/STSGCN/siMLPe}/README.md`.
 
 ### Citation
 
