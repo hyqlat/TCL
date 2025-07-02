@@ -19,13 +19,13 @@ We provide model checkpoints for multiple backbone models on different datasets.
 If you find this project useful in your research, please consider citing:
 
 ```bash
-@inproceedings{
-tang2023temporal,
-title={Temporal Continual Learning with Prior Compensation for Human Motion Prediction},
-author={Jianwei Tang and Jiangxin Sun and Xiaotong Lin and lifang zhang and Wei-Shi Zheng and Jian-Fang Hu},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=v0GzRLvVp3}
+@article{tang2023temporal,
+  title={Temporal continual learning with prior compensation for human motion prediction},
+  author={Tang, Jianwei and Sun, Jiangxin and Lin, Xiaotong and Zheng, Wei-Shi and Hu, Jian-Fang and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={65837--65849},
+  year={2023}
 }
 ```
 
